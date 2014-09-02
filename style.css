@@ -98,6 +98,7 @@ h1 {
 .dribbble:hover path { fill: #c73b6f;}
 .github:hover path { fill: #1a1a1a;}
 .twitter:hover path { fill: #00aced;}
+<<<<<<< HEAD
 .msg:hover path { fill:#A8A58A;}
 
 #say-hola-open { display: none; }
@@ -149,3 +150,5 @@ h1 {
 }
 
 
+=======
+>>>>>>> 0628634af3820e216abe893810c5bf5bb7203b31
