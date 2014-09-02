@@ -9,7 +9,6 @@ body {
 h1 {
   font-family: 'Exo', sans-serif;
   font-weight: 100;
-  color:black;
   opacity: 0;
   -webkit-animation: text 2s cubic-bezier(0.26, 1.17, 0.89, -0.74) forwards;
   animation: text 2s cubic-bezier(0.26, 1.17, 0.89, -0.74) forwards;
@@ -18,6 +17,19 @@ h1 {
   margin-top: 100px;
   position: relative;
   color: #FBF8CA;
+  -webkit-transition:color .3s;
+  transition:color .3s;
+}
+
+::selection {
+  color: #4e4e4e;
+  background: #FBF8CA;
+  text-shadow:none;
+}
+::-moz-selection {
+  color: #4e4e4e;
+  background: #FBF8CA;
+  text-shadow:none;
 }
 
 .lamp {
@@ -74,6 +86,8 @@ h1 {
   height: 20px;
   margin: 3px;
   display: inline-block;
+  z-index: 200;
+  position: relative;
 }
 .link path { 
   fill:#333;
@@ -84,4 +98,54 @@ h1 {
 .dribbble:hover path { fill: #c73b6f;}
 .github:hover path { fill: #1a1a1a;}
 .twitter:hover path { fill: #00aced;}
-.twitter svg { margin-bottom: 2px;}
+.msg:hover path { fill:#A8A58A;}
+
+#say-hola-open { display: none; }
+#say-hola {
+  position: relative;
+  
+  opacity: 0;
+  
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform:rotate(-20deg);
+  transform:rotate(-20deg);
+  
+  -webkit-transition:opacity .3s, -webkit-transform .5s ease-in-out;
+  transition:opacity .3s, transform .3s ease-in-out;
+}
+#say-hola textarea {
+  height: 50px;
+  background-color: #bcbcbc;
+  margin-top: 10px;
+  border: 3px solid #333;
+}
+#say-hola textarea:focus, 
+#say-hola textarea:active { 
+  outline: none;
+}
+#say-hola::before {
+  content:'';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border:2px solid #333;
+  top: 5px;
+  left: 50%;
+  margin-left: -10px;
+  z-index: -1;
+  -webkit-transform:rotate(45deg);
+}
+
+#say-hola-open:checked ~ #say-hola {
+  opacity: 1;
+  -webkit-transform:rotate(3deg);
+  transform:rotate(3deg);
+}
+#say-hola-open:checked ~ #say-hola:active,
+#say-hola-open:checked ~ #say-hola:focus {
+  -webkit-transform:rotate(0deg);
+  transform:rotate(0deg);
+}
+
+
