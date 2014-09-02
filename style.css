@@ -102,6 +102,7 @@ h1 {
 .msg:hover path { fill:#A8A58A;}
 
 #say-hola-open { display: none; }
+#say-hola-open + label { cursor: pointer; }
 #say-hola {
   position: relative;
   
@@ -148,7 +149,3 @@ h1 {
   -webkit-transform:rotate(0deg);
   transform:rotate(0deg);
 }
-
-
-=======
->>>>>>> 0628634af3820e216abe893810c5bf5bb7203b31
