@@ -83,10 +83,15 @@ footer {
   width: 100%;
   text-align: center;
   color:#A8A58A;
+  opacity: 0;
+  -webkit-animation: op 0.3s 2s forwards;
+  animation: op 0.3s 2s forwards;
 }
 
 @-webkit-keyframes bulb { to { fill-opacity: 1; fill: #FBF8CA; } }
 @keyframes bulb { to { fill-opacity: 1; fill: #FBF8CA; } }
+@-webkit-keyframes op { to { opacity: 1; } }
+@keyframes op { to { opacity: 1; } }
 @-webkit-keyframes text { 
   to { opacity: .3; text-shadow: rgb(70, 70, 70) 0px 1px, rgb(70, 70, 70) 0px 2px, rgb(70, 70, 70) 0px 3px, rgb(70, 70, 70) 0px 4px, rgb(70, 70, 70) 0px 5px, rgb(70, 70, 70) 0px 6px, rgb(70, 70, 70) 0px 7px, rgb(70, 70, 70) 0px 8px, rgb(70, 70, 70) 0px 9px, rgb(70, 70, 70) 0px 10px, rgb(70, 70, 70) 0px 11px, rgb(70, 70, 70) 0px 12px, rgb(70, 70, 70) 0px 13px, rgb(70, 70, 70) 0px 14px, rgb(71, 71, 71) 0px 15px, rgb(71, 71, 71) 0px 16px, rgb(72, 72, 72) 0px 17px, rgb(72, 72, 72) 0px 18px, rgb(73, 73, 73) 0px 19px, rgb(73, 73, 73) 0px 20px, rgb(74, 74, 74) 0px 21px, rgb(74, 74, 74) 0px 22px, rgb(74, 74, 74) 0px 23px, rgb(75, 75, 75) 0px 24px, rgb(75, 75, 75) 0px 25px, rgb(76, 76, 76) 0px 26px, rgb(76, 76, 76) 0px 27px, rgb(77, 77, 77) 0px 28px, rgb(77, 77, 77) 0px 29px, rgb(78, 78, 78) 0px 30px; } 
 }
