@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 body {
   background-color: #4e4e4e;
   margin: 0;
@@ -5,9 +8,10 @@ body {
   font-size: 10px;
   -webkit-perspective:400px;
   perspective:400px;
+  font-family: 'Exo', sans-serif;
+  height: 100%;
 }
 h1 {
-  font-family: 'Exo', sans-serif;
   font-weight: 100;
   opacity: 0;
   -webkit-animation: text 2s cubic-bezier(0.26, 1.17, 0.89, -0.74) forwards;
@@ -20,6 +24,9 @@ h1 {
   -webkit-transition:color .3s;
   transition:color .3s;
 }
+
+a { text-decoration: none; color:#A8A58A; }
+a:hover { text-decoration: underline;}
 
 ::selection {
   color: #4e4e4e;
@@ -51,6 +58,32 @@ h1 {
   animation: bulb 0.3s 0.3s 5 cubic-bezier(0.26, 1.17, 0.89, -0.74) alternate forwards;
 }
 
+.link {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  display: inline-block;
+  z-index: 200;
+  position: relative;
+}
+.link path { 
+  fill:#333;
+  -webkit-transition:fill .3s;
+  transition:fill .3s;
+}
+.codepen:hover path { fill: #d5d5d5;}
+.dribbble:hover path { fill: #c73b6f;}
+.github:hover path { fill: #1a1a1a;}
+.twitter:hover path { fill: #00aced;}
+.msg:hover path { fill:#A8A58A;}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color:#A8A58A;
+}
 
 @-webkit-keyframes bulb { to { fill-opacity: 1; fill: #FBF8CA; } }
 @keyframes bulb { to { fill-opacity: 1; fill: #FBF8CA; } }
@@ -81,22 +114,3 @@ h1 {
   85% { transform: rotate(-1deg); }
   100% { transform: rotate(0deg); }
 }
-.link {
-  width: 20px;
-  height: 20px;
-  margin: 3px;
-  display: inline-block;
-  z-index: 200;
-  position: relative;
-}
-.link path { 
-  fill:#333;
-  -webkit-transition:fill .3s;
-  transition:fill .3s;
-}
-.codepen:hover path { fill: #d5d5d5;}
-.dribbble:hover path { fill: #c73b6f;}
-.github:hover path { fill: #1a1a1a;}
-.twitter:hover path { fill: #00aced;}
-.msg:hover path { fill:#A8A58A;}
-
