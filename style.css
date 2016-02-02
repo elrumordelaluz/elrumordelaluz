@@ -63,6 +63,7 @@ a:hover { text-decoration: underline;}
   transform: rotate(2deg);
   -webkit-animation: lamp2 1s infinite;
   animation: lamp2 1s infinite;
+  cursor: none;
 }
 
 .lamp:hover .bulb {
