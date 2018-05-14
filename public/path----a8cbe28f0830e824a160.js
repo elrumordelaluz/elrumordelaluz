@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{102:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Lionel Tzatzkin Developer"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----a8cbe28f0830e824a160.js.map
