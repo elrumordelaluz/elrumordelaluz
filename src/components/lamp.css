@@ -1,0 +1,114 @@
+.lamp__wrapper {
+  text-align: center;
+}
+
+.lamp {
+  width: 80px;
+  height: 128px;
+  display: inline-block;
+  transform-origin: top center;
+  transform: rotate(45deg);
+  animation: lamp 3s forwards;
+}
+
+.bulb {
+  fill: #fbf8ca;
+  fill-opacity: 0.1;
+  animation: bulb 0.3s 0.3s 5 cubic-bezier(0.26, 1.17, 0.89, -0.74) alternate
+    forwards;
+}
+
+.bulb__line {
+  fill: none;
+  stroke: #d7d5af;
+  stroke-width: 0.263;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.lamp__elem {
+  fill: rgb(34, 37, 43);
+}
+
+.lamp:hover {
+  transform: rotate(2deg);
+  animation: lamp2 1s infinite;
+  cursor: none;
+}
+
+.lamp:hover .bulb {
+  animation: bulb2 0.1s alternate infinite;
+}
+
+@keyframes bulb {
+  to {
+    fill-opacity: 1;
+    fill: #fbf8ca;
+  }
+}
+
+@keyframes bulb2 {
+  to {
+    fill-opacity: 0.25;
+    fill: #fbf8ca;
+  }
+}
+
+@keyframes op {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text {
+  to {
+    opacity: 0.3;
+    text-shadow: rgb(70, 70, 70) 0px 1px, rgb(70, 70, 70) 0px 2px,
+      rgb(70, 70, 70) 0px 3px, rgb(70, 70, 70) 0px 4px, rgb(70, 70, 70) 0px 5px,
+      rgb(70, 70, 70) 0px 6px, rgb(70, 70, 70) 0px 7px, rgb(70, 70, 70) 0px 8px,
+      rgb(70, 70, 70) 0px 9px, rgb(70, 70, 70) 0px 10px,
+      rgb(70, 70, 70) 0px 11px, rgb(70, 70, 70) 0px 12px,
+      rgb(70, 70, 70) 0px 13px, rgb(70, 70, 70) 0px 14px,
+      rgb(71, 71, 71) 0px 15px, rgb(71, 71, 71) 0px 16px,
+      rgb(72, 72, 72) 0px 17px, rgb(72, 72, 72) 0px 18px,
+      rgb(73, 73, 73) 0px 19px, rgb(73, 73, 73) 0px 20px,
+      rgb(74, 74, 74) 0px 21px, rgb(74, 74, 74) 0px 22px,
+      rgb(74, 74, 74) 0px 23px, rgb(75, 75, 75) 0px 24px,
+      rgb(75, 75, 75) 0px 25px, rgb(76, 76, 76) 0px 26px,
+      rgb(76, 76, 76) 0px 27px, rgb(77, 77, 77) 0px 28px,
+      rgb(77, 77, 77) 0px 29px, rgb(78, 78, 78) 0px 30px;
+  }
+}
+
+@keyframes lamp {
+  5% {
+    transform: rotate(-45deg);
+  }
+  10% {
+    transform: rotate(35deg);
+  }
+  15% {
+    transform: rotate(-35deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  65% {
+    transform: rotate(3deg);
+  }
+  85% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes lamp2 {
+  50% {
+    transform: rotate(-2deg);
+  }
+}
