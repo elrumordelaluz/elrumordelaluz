@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Lionel Tzatzkin Developer',
+    title: 'elrumordelaluz | Lionel Tzatzkin',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }

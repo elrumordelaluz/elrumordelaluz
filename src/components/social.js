@@ -1,5 +1,4 @@
-import React from 'react';
-import './social.css';
+import React from 'react'
 
 const Social = () => (
   <div className="links">
@@ -41,6 +40,6 @@ const Social = () => (
       </svg>
     </a>
   </div>
-);
+)
 
-export default Social;
+export default Social
