@@ -827,9 +827,10 @@ pre tt:after {
   text-align: center;
 }
 .link {
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  margin: 0 4px;
   display: inline-block;
   z-index: 200;
   position: relative;
