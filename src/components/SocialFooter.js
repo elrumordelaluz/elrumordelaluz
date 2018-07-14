@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
-import styles from './social.module.css'
+import styles from './social-footer.module.css'
 
 const Social = () => (
   <div className={styles.links}>

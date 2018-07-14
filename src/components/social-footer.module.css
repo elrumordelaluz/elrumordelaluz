@@ -1,5 +1,9 @@
 .links {
   text-align: center;
+  position: fixed;
+  bottom: 0.67em;
+  left: 0;
+  right: 0;
 }
 .link {
   width: 24px;

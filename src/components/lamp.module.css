@@ -1,17 +1,16 @@
-.lamp__wrapper {
-  text-align: center;
+:root {
+  --lamp-width: 58px;
 }
 
 .lamp {
-  width: 80px;
-  height: 128px;
+  width: var(--lamp-width);
   display: inline-block;
   transform-origin: top center;
   transform: rotate(45deg);
   animation: lamp 3s forwards;
   position: relative;
   top: 0;
-  left: calc(50% - 40px);
+  left: calc(50% - (var(--lamp-width) / 2));
 }
 
 .bulb {
@@ -36,7 +35,6 @@
 .lamp:hover {
   transform: rotate(2deg);
   animation: lamp2 1s infinite;
-  cursor: none;
 }
 
 .lamp:hover .bulb {

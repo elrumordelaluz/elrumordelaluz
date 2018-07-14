@@ -1,19 +1,16 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
 
 import Lamp from '../components/lamp'
-import Social from '../components/social'
+import SocialFooter from '../components/SocialFooter'
 import lampOn from './lamp_on.png'
 import lampOff from './lamp_off.png'
 
-import './index.css'
+import './fonts.css'
+import './reboot.css'
 
 class Layout extends Component {
-  static propTypes = {
-    children: PropTypes.func,
-  }
-
   componentDidMount() {
     window.addEventListener('focus', this.setActiveIcon)
     window.addEventListener('blur', this.setUnactiveIcon)
@@ -40,32 +37,35 @@ class Layout extends Component {
   }
 
   render() {
-    const { children, data } = this.props
+    const { children } = this.props
 
     return (
-      <div>
-        <Helmet>
-          <title>{data.site.siteMetadata.title}</title>
-          <meta name="description" content="Lionel Tzatzkin" />
-          <link rel="icon" type="image/png" sizes="192x192" href={lampOn} />
-        </Helmet>
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
+          }
+        `}
+        render={data => (
+          <>
+            <Helmet>
+              <title>{data.site.siteMetadata.title}</title>
+              <meta name="description" content="Lionel Tzatzkin" />
+              <link rel="icon" type="image/png" sizes="192x192" href={lampOn} />
+            </Helmet>
 
-        <Lamp />
-        {children()}
-        <Social />
-      </div>
+            <Lamp linkTo="/" />
+            {children}
+            <SocialFooter />
+          </>
+        )}
+      />
     )
   }
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

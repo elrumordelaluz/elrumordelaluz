@@ -60,3 +60,10 @@
       hsl(223, 13%, 5%) 0px 29px, hsl(223, 13%, 5%) 0px 30px;
   }
 }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
