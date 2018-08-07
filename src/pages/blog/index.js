@@ -8,7 +8,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <h1 className={cn(styles.title, 'title')}>
-        Blog<br />
+        Blog
+        <br />
         <small>{/*data.allMarkdownRemark.totalCount*/} working on it…</small>
       </h1>
 

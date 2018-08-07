@@ -7,7 +7,8 @@ import styles from './index.module.css'
 const IndexPage = () => (
   <Layout>
     <h1 className={cn(styles.title, 'title')}>
-      Lionel Tzatzkin<br />
+      Lionel Tzatzkin
+      <br />
       <small>{`[ elrumordelaluz ]`}</small>
     </h1>
     <nav className={styles.nav}>

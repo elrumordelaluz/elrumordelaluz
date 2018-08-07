@@ -4,15 +4,14 @@
   "version": "1.0.0",
   "author": "Lionel Tzatzkin <elrumordelaluz@hotmail.com>",
   "dependencies": {
-    "classnames": "2.2.5",
-    "gatsby": "2.0.0-beta.36",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-google-analytics": "2.0.0-beta.2",
-    "gatsby-plugin-react-helmet": "3.0.0-beta.3",
-    "gatsby-source-filesystem": "2.0.1-beta.5",
-    "gatsby-transformer-remark": "2.1.1-beta.3",
-    "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "classnames": "2.2.6",
+    "gatsby": "2.0.0-beta.76",
+    "gatsby-plugin-google-analytics": "2.0.0-beta.4",
+    "gatsby-plugin-react-helmet": "3.0.0-beta.4",
+    "gatsby-source-filesystem": "2.0.1-beta.10",
+    "gatsby-transformer-remark": "2.1.1-beta.6",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "react-helmet": "5.2.0"
   },
   "keywords": [
@@ -26,6 +25,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.12.0"
+    "prettier": "1.14.0"
   }
 }
