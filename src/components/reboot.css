@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey|Miriam+Libre');
+
 *,
 *:before,
 *:after {
@@ -171,13 +173,14 @@ input,
 button,
 select,
 option {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Miriam Libre', sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: hsl(223, 13%, 7%);
+  background-color: hsl(65, 100%, 58%);
   color: #fbf8ca;
+  font-family: 'Arapey', serif;
 }
 
 ::selection {

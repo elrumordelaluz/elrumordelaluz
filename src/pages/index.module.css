@@ -67,3 +67,37 @@
   align-items: center;
   justify-content: center;
 }
+
+.grid {
+  color: #121418;
+  display: grid;
+  /* grid-template-columns: 520px 300px 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  grid-column-gap: 88px;
+  margin: 100px;
+}
+
+.a {
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.b {
+  padding-top: 40px;
+  border-top: 1px solid;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.c {
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 142px;
+}
+
+.quote {
+  font-size: 34px;
+  padding: 1em 0;
+}

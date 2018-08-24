@@ -1,19 +1,40 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import cn from 'classnames'
 import Layout from '../components/Layout'
 import styles from './index.module.css'
 
 const IndexPage = () => (
   <Layout>
-    <h1 className={cn(styles.title, 'title')}>
-      Lionel Tzatzkin
-      <br />
-      <small>{`[ elrumordelaluz ]`}</small>
-    </h1>
-    <nav className={styles.nav}>
-      <Link to="/blog">blog</Link>
-    </nav>
+    <div className={styles.grid}>
+      <div className={styles.a}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.{' '}
+        </p>
+      </div>
+      <div className={styles.b}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+        <p className={styles.quote}>
+          “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore”
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+      <div className={styles.c}>
+        Idea, <br />
+        Design, <br />
+        Code.
+      </div>
+    </div>
   </Layout>
 )
 
