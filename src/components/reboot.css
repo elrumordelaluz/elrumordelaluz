@@ -176,21 +176,28 @@ option {
   font-family: 'Miriam Libre', sans-serif;
 }
 
+:root {
+  --h: 65;
+  --s: 100%;
+  --l: 58%;
+  --black: #212305;
+}
+
 body {
   margin: 0;
-  background-color: hsl(65, 100%, 58%);
-  color: #fbf8ca;
+  background-color: hsl(var(--h), var(--s), var(--l));
+  color: var(--black);
   font-family: 'Arapey', serif;
 }
 
 ::selection {
   color: #fff;
-  background: #bc79d9;
+  background: #fb28e9;
   text-shadow: none;
 }
 ::-moz-selection {
   color: #fff;
-  background: #bc79d9;
+  background: #fb28e9;
   text-shadow: none;
 }
 
