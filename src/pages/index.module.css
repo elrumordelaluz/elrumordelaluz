@@ -79,26 +79,26 @@
   margin: 1rem;
 }
 
-.quotes {
-  grid-area: quotes;
-}
-
 .intro {
   grid-area: intro;
-}
-
-.intro {
   font-family: 'Miriam Libre', sans-serif;
   font-size: 22px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.66;
 }
 
 .intro p {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.66em;
+}
+
+.raw {
+  font-family: 'Arapey', serif;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 .quotes {
+  grid-area: quotes;
   border-top: 1px solid;
   padding-top: 40px;
   border-bottom: 1px solid;
@@ -108,6 +108,7 @@
 }
 
 .copy {
+  grid-area: copy;
   font-family: 'Miriam Libre', sans-serif;
   font-size: 4rem;
 }
@@ -153,7 +154,7 @@
 }
 
 .highlight {
-  background-size: 200%;
+  background-size: 100%;
 }
 
 .link {
