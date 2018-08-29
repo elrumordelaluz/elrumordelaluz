@@ -70,7 +70,7 @@
 
 .wrapper {
   display: grid;
-  grid-gap: 88px;
+  grid-gap: 3rem;
   grid-template-areas:
     'copy'
     'intro'
@@ -100,11 +100,13 @@
 .quotes {
   grid-area: quotes;
   border-top: 1px solid;
-  padding-top: 40px;
   border-bottom: 1px solid;
+  padding-top: 40px;
   padding-bottom: 40px;
+  padding: 2.5rem 0.5rem;
   font-size: 22px;
   line-height: 1.5;
+  align-self: center;
 }
 
 .copy {
@@ -125,11 +127,16 @@
       'intro copy'
       'quotes quotes';
     margin: 3rem;
+    grid-gap: 5rem;
   }
 
   .copy {
     align-self: center;
     font-size: 8rem;
+  }
+
+  .quotes {
+    margin: 0 200px;
   }
 }
 
@@ -142,6 +149,10 @@
 
   .copy {
     align-self: start;
+  }
+
+  .quotes {
+    margin: auto;
   }
 }
 

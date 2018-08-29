@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import SocialFooter from '../components/SocialFooter'
 import lampOn from './lamp_on.png'
 import lampOff from './lamp_off.png'
 
@@ -57,7 +56,6 @@ class Layout extends Component {
               <link rel="icon" type="image/png" sizes="192x192" href={lampOn} />
             </Helmet>
             {children}
-            <SocialFooter />
           </>
         )}
       />

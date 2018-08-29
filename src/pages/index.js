@@ -22,7 +22,7 @@ const IndexPage = () => (
             Pixeden
           </a>
           , pushing stuff forward into new technologies/stacks, creating awesome
-          new tools, like{' '}
+          new tools like{' '}
           <a className={styles.link} href="https://orioniconlibrary.com">
             Orion Icon Library
           </a>
@@ -41,10 +41,7 @@ const IndexPage = () => (
           I love the idea behind{' '}
           <span className={styles.highlight}>Open Source</span>, so I create,
           collaborate and mantain{' '}
-          <a
-            className={styles.link}
-            href="https://github.com/elrumordelaluz?tab=repositories"
-          >
+          <a className={styles.link} href="https://github.com/elrumordelaluz">
             several open-source modules
           </a>
           . In general they born as a specific need wonrking on something, and
@@ -76,7 +73,7 @@ const IndexPage = () => (
           and{' '}
           <a
             className={styles.link}
-            href="https://www.behance.net/rumbografico"
+            href="https://www.behance.net/elrumordelaluz"
           >
             Behance
           </a>
@@ -90,9 +87,15 @@ const IndexPage = () => (
           “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.
+          I am a{' '}
+          <a
+            className={styles.link}
+            href="https://en.wikipedia.org/wiki/Mate_(drink)"
+          >
+            mate
+          </a>{' '}
+          drinker (I'm Argentinean), living in a small hamlet in Iatly, near a
+          lake and in front of horses. Love to play brazilian music.
         </p>
       </div>
 
