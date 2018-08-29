@@ -94,8 +94,15 @@ const IndexPage = () => (
           >
             mate
           </a>{' '}
-          drinker (I'm Argentinean), living in a small hamlet in Iatly, near a
-          lake and in front of horses. Love to play brazilian music.
+          drinker (yup! I'm from Buenos Aires), living in a small hamlet in
+          Italy, near a lake and in front lovely horses. Play{' '}
+          <a
+            className={styles.link}
+            href="https://en.wikipedia.org/wiki/Pandeiro"
+          >
+            pandeiro
+          </a>{' '}
+          and observe the deep sky are my hobbies.
         </p>
       </div>
 

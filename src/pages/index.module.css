@@ -76,7 +76,7 @@
     'intro'
     'quotes';
   color: #212305;
-  margin: 1rem;
+  margin: 3rem;
 }
 
 .intro {
@@ -120,13 +120,12 @@
   padding: 1em 0;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 960px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'intro copy'
       'quotes quotes';
-    margin: 3rem;
     grid-gap: 5rem;
   }
 
