@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'elrumordelaluz | Lionel Tzatzkin',
+    title: 'Lionel Tzatzkin (elrumordelaluz)',
   },
   plugins: [
     {
