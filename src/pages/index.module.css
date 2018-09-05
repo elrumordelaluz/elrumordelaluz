@@ -118,6 +118,12 @@
 .quote {
   font-size: 34px;
   padding: 1em 0;
+  margin: 0;
+}
+
+.quote footer {
+  font-size: 0.5em;
+  text-align: right;
 }
 
 @media (min-width: 960px) {

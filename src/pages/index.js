@@ -83,9 +83,13 @@ const IndexPage = () => (
           </a>
           .
         </p>
-        <p className={styles.quote}>
-          “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-        </p>
+        <blockquote className={styles.quote}>
+          “Simplicity is about subtracting the obvious and adding the
+          meaningful.”
+          <footer>
+            — <cite>John Maeda</cite>
+          </footer>
+        </blockquote>
         <p>
           I am a{' '}
           <a
