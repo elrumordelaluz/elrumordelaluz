@@ -7,7 +7,7 @@ export default ({ data }) => {
     <Layout>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <Link to={node.fields.slug}>
+          <Link to={node.frontmatter.path}>
             <h3>
               {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
             </h3>
@@ -29,9 +29,8 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-          }
-          fields {
-            slug
+            path
+            tags
           }
           excerpt
         }
