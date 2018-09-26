@@ -1,73 +1,3 @@
-.title {
-  font-weight: 100;
-  opacity: 0.05;
-  animation: text 2s cubic-bezier(0.26, 1.17, 0.89, -0.74) forwards;
-  font-size: 43px;
-  display: block;
-  margin-top: 100px;
-  position: relative;
-  color: #fbf8ca;
-  transition: color 0.3s;
-  text-align: center;
-  line-height: 1;
-}
-
-.title small {
-  font-size: 0.5em;
-  line-height: 1;
-  position: relative;
-  top: -0.5em;
-}
-
-@keyframes text {
-  to {
-    opacity: 0.3;
-    text-shadow: hsl(223, 13%, 0%) 0px 1px, hsl(223, 13%, 0%) 0px 2px,
-      hsl(223, 13%, 0%) 0px 3px, hsl(223, 13%, 0%) 0px 4px,
-      hsl(223, 13%, 0%) 0px 5px, hsl(223, 13%, 0%) 0px 6px,
-      hsl(223, 13%, 0%) 0px 7px, hsl(223, 13%, 0%) 0px 8px,
-      hsl(223, 13%, 0%) 0px 9px, hsl(223, 13%, 0%) 0px 10px,
-      hsl(223, 13%, 0%) 0px 11px, hsl(223, 13%, 0%) 0px 12px,
-      hsl(223, 13%, 0%) 0px 13px, hsl(223, 13%, 0%) 0px 14px,
-      hsl(223, 13%, 1%) 0px 15px, hsl(223, 13%, 1%) 0px 16px,
-      hsl(223, 13%, 1%) 0px 17px, hsl(223, 13%, 2%) 0px 18px,
-      hsl(223, 13%, 2%) 0px 19px, hsl(223, 13%, 2%) 0px 20px,
-      hsl(223, 13%, 3%) 0px 21px, hsl(223, 13%, 3%) 0px 22px,
-      hsl(223, 13%, 3%) 0px 23px, hsl(223, 13%, 4%) 0px 24px,
-      hsl(223, 13%, 4%) 0px 25px, hsl(223, 13%, 4%) 0px 26px,
-      hsl(223, 13%, 5%) 0px 27px, hsl(223, 13%, 5%) 0px 28px,
-      hsl(223, 13%, 5%) 0px 29px, hsl(223, 13%, 5%) 0px 30px;
-  }
-}
-
-@keyframes text2 {
-  to {
-    opacity: 0.3;
-    text-shadow: hsl(223, 13%, 0%) 0px 1px, hsl(223, 13%, 0%) 0px 2px,
-      hsl(223, 13%, 0%) 0px 3px, hsl(223, 13%, 0%) 0px 4px,
-      hsl(223, 13%, 0%) 0px 5px, hsl(223, 13%, 0%) 0px 6px,
-      hsl(223, 13%, 0%) 0px 7px, hsl(223, 13%, 0%) 0px 8px,
-      hsl(223, 13%, 0%) 0px 9px, hsl(223, 13%, 0%) 0px 10px,
-      hsl(223, 13%, 0%) 0px 11px, hsl(223, 13%, 0%) 0px 12px,
-      hsl(223, 13%, 0%) 0px 13px, hsl(223, 13%, 0%) 0px 14px,
-      hsl(223, 13%, 1%) 0px 15px, hsl(223, 13%, 1%) 0px 16px,
-      hsl(223, 13%, 1%) 0px 17px, hsl(223, 13%, 2%) 0px 18px,
-      hsl(223, 13%, 2%) 0px 19px, hsl(223, 13%, 2%) 0px 20px,
-      hsl(223, 13%, 3%) 0px 21px, hsl(223, 13%, 3%) 0px 22px,
-      hsl(223, 13%, 3%) 0px 23px, hsl(223, 13%, 4%) 0px 24px,
-      hsl(223, 13%, 4%) 0px 25px, hsl(223, 13%, 4%) 0px 26px,
-      hsl(223, 13%, 5%) 0px 27px, hsl(223, 13%, 5%) 0px 28px,
-      hsl(223, 13%, 5%) 0px 29px, hsl(223, 13%, 5%) 0px 30px;
-  }
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .wrapper {
   display: grid;
   grid-gap: 3rem;
@@ -147,7 +77,7 @@
 
 @media (min-width: 1312px) {
   .wrapper {
-    grid-template-columns: 1.7fr 1fr 2.2fr;
+    grid-template-columns: 1.7fr 1fr 1fr;
     grid-template-areas: 'intro quotes copy';
     margin: 100px;
   }

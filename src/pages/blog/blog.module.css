@@ -1,0 +1,49 @@
+.list {
+  border: 20px solid hsl(var(--h), var(--s), var(--l));
+  background-color: white;
+  height: 100%;
+  min-height: 100vh;
+  padding: 3em;
+}
+
+.title,
+.subtitle {
+  font-family: 'Miriam Libre', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+.date {
+  opacity: 0.5;
+  line-height: 1.5;
+}
+
+.excerpt {
+  line-height: 1.5;
+}
+
+.post {
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  line-height: 1.5;
+  margin-left: -0.34em;
+  background-color: hsl(var(--h), var(--s), var(--l));
+  margin-top: 2em;
+  border-width: 4px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.post:hover {
+  background-color: transparent;
+  border-color: hsl(var(--h), var(--s), var(--l));
+}

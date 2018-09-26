@@ -1,20 +1,27 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import styles from './blog.module.css'
 
 export default ({ data }) => {
   return (
     <Layout>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.frontmatter.path}>
-            <h3>
-              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-            </h3>
-            <p>{node.excerpt}</p>
-          </Link>
-        </div>
-      ))}
+      <div className={styles.list}>
+        <h1 className={styles.title}>
+          Thoughts, <br />
+          Ideas, <br />
+          Snippets
+        </h1>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Fragment key={node.id}>
+            <Link to={node.frontmatter.path} className={styles.post}>
+              <h3 className={styles.subtitle}>{node.frontmatter.title}</h3>
+            </Link>
+            <p className={styles.date}>{node.frontmatter.date}</p>
+            <p className={styles.excerpt}>{node.excerpt}</p>
+          </Fragment>
+        ))}
+      </div>
     </Layout>
   )
 }
