@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import lampOn from './lamp_on.png'
-import lampOff from './lamp_off.png'
+import iconActive from './io_icn_1.png'
+import iconInactive from './io_icn_2.png'
 
 import './fonts.css'
 import './reboot.css'
@@ -20,7 +20,7 @@ class Layout extends Component {
       document.createElement('link')
     link.type = 'image/x-icon'
     link.rel = 'shortcut icon'
-    link.href = lampOn
+    link.href = iconActive
     document.getElementsByTagName('head')[0].appendChild(link)
   }
 
@@ -30,7 +30,7 @@ class Layout extends Component {
       document.createElement('link')
     link.type = 'image/x-icon'
     link.rel = 'shortcut icon'
-    link.href = lampOff
+    link.href = iconInactive
     document.getElementsByTagName('head')[0].appendChild(link)
   }
 
@@ -53,7 +53,12 @@ class Layout extends Component {
             <Helmet>
               <title>{data.site.siteMetadata.title}</title>
               <meta name="description" content="Lionel Tzatzkin" />
-              <link rel="icon" type="image/png" sizes="192x192" href={lampOn} />
+              <link
+                rel="icon"
+                type="image/png"
+                sizes="192x192"
+                href={iconActive}
+              />
             </Helmet>
             {children}
           </>
