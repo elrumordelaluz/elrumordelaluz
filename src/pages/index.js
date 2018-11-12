@@ -35,7 +35,7 @@ const IndexPage = () => (
           <span className={styles.highlight}>JavaScript</span>, mostly with{' '}
           <span className={styles.highlight}>React.js</span> but I am passionate
           about <span className={styles.highlight}>SVG</span> and{' '}
-          <span className={styles.highlight}>CSS</span>.
+          <span className={styles.highlight}>CSS</span> as well.
         </p>
         <p className={styles.raw}>
           I love the idea behind{' '}
