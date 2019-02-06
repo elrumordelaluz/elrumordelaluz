@@ -36,8 +36,23 @@ yum install -y mongodb-org
 sudo service mongod start
 ```
 
-4. Check service
+5. Check service
 
 ```bash
 systemctl status mongod.service
+```
+
+### Definetly Uninstall MongoDB
+
+1. Delete Package
+
+```bash
+yum erase $(rpm -qa | grep mongodb-org)
+```
+
+1. Delete related folders
+
+```bash
+sudo rm -r /var/log/mongodb
+sudo rm -r /var/lib/mongo
 ```
