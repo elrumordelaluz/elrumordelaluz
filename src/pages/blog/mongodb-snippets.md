@@ -5,6 +5,8 @@ tags: ['snippets', 'mongodb', 'mongo']
 path: '/blog/mongodb-snippets'
 ---
 
+# Install
+
 ### Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/) _Community Edition_ on CentOS 7
 
 1. Configure `yum` Package Manager creating a `.repo` file:
@@ -42,7 +44,9 @@ sudo service mongod start
 systemctl status mongod.service
 ```
 
-### Definetly Uninstall MongoDB
+### Definetly Uninstall MongoDB from CentOS 7
+
+After lots of try/catch I arrived to this one that lets reinstall a clen new version without side effects.
 
 1. Delete Package
 
@@ -55,4 +59,30 @@ yum erase $(rpm -qa | grep mongodb-org)
 ```bash
 sudo rm -r /var/log/mongodb
 sudo rm -r /var/lib/mongo
+```
+
+### Concurrent versions of MongoDB in OSX
+
+# Dupm, Restore and related
+
+### Dump a specific _Database_
+
+```bash
+mongodump --db my_db --out ./my_dump_folder
+```
+
+### Restore that specific _Database_
+
+Use `--db` in case we run the command from inside the `/my_dump_folder` folder (`cd my_dump_folder`). Use `--drop` to drop the _Database_ before restore it.
+
+```bash
+mongorestore --drop --db my_db .
+```
+
+### Copy dump from local into _Server_
+
+The flah `-P` is optional in case need to pass a specific `PORT`.
+
+```bash
+scp -rP [PORT] my_dump_folder [user]@[IP]:~/[location]
 ```
