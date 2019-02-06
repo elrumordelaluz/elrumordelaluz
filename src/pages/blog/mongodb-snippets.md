@@ -1,5 +1,5 @@
 ---
-title: 'Useful Console snippets'
+title: 'Useful MongoDB snippets'
 date: '2019-02-06'
 tags: ['snippets', 'mongodb', 'mongo']
 path: '/blog/mongodb-snippets'
