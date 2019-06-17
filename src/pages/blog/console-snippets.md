@@ -10,3 +10,9 @@ path: '/blog/console-snippets'
 ```zsh
 ctrl + w
 ```
+
+### Add package from _Github_ private repo
+
+```zsh
+ yarn add 'git+ssh://git@github.com:[git-user]/[git-repo].git#1.0.0'
+```
