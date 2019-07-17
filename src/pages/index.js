@@ -44,7 +44,7 @@ const IndexPage = () => (
           <a className={styles.link} href="https://github.com/elrumordelaluz">
             several open-source modules
           </a>
-          . In general they born as a specific need wonrking on something, and
+          . In general they born as a specific need working on something, and
           then becomes useful to other people.
         </p>
       </div>
