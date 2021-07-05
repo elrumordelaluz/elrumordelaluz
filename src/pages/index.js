@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import styles from './index.module.css'
+import * as styles from './index.module.css'
 
 const IndexPage = () => (
   <Layout>
@@ -21,11 +21,13 @@ const IndexPage = () => (
           <a className={styles.link} href="https://pixeden.com">
             Pixeden
           </a>
-          , pushing stuff forward into new technologies/stacks, creating awesome
-          new tools like{' '}
-          <a className={styles.link} href="https://orioniconlibrary.com">
-            Orion Icon Library
+          , pushing stuff forward into new technologies/stacks, creating <a className={styles.link} href="https://orioniconlibrary.com">
+            awesome
+          </a>{' '}
+           <a className={styles.link} href="https://www.pixeden.com/music">
+            tools
           </a>
+          
           , closing the gap between{' '}
           <span className={styles.highlight}>Designer</span> and{' '}
           <span className={styles.highlight}>Developer</span> .

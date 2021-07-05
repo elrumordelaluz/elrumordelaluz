@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import styles from './blog.module.css'
+import * as styles from './blog.module.css'
 
-export default ({ data }) => {
+function BlogPage ({ data })  {
   return (
     <Layout>
       <div className={styles.list}>
@@ -25,6 +25,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default BlogPage
 
 export const query = graphql`
   query BlogQuery {
