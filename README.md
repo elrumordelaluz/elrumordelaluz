@@ -4,7 +4,7 @@
 >
 > _— John Maeda_
 
-### Hola. My name is Lionel.
+### Hola. My name is Lionel Tzatzkin.
 
 I am a Front End Developer who started as Graphic Designer, worked as Art Director and found a passion writing code.
 
