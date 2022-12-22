@@ -55,19 +55,33 @@ export default function IndexPage() {
 
         <div className={styles.quotes}>
           <p>
-            You could find me on{' '}
+            You can find me on{' '}
             <a
+              className={styles.link}
+              rel="me"
+              href="https://mastodon.uno/@elrumordelaluz"
+            >
+              Mastodon
+            </a>{' '}
+            or{' '}
+            <a
+              rel="me"
               className={styles.link}
               href="https://twitter.com/elrumordelaluz"
             >
               Twitter
             </a>{' '}
             or find stuff I made on{' '}
-            <a className={styles.link} href="https://github.com/elrumordelaluz">
+            <a
+              rel="me"
+              className={styles.link}
+              href="https://github.com/elrumordelaluz"
+            >
               Github
             </a>
             ,{' '}
             <a
+              rel="me"
               className={styles.link}
               href="https://codepen.io/elrumordelaluz/"
             >
@@ -75,6 +89,7 @@ export default function IndexPage() {
             </a>
             ,{' '}
             <a
+              rel="me"
               className={styles.link}
               href="https://dribbble.com/elrumordelaluz/"
             >
@@ -82,6 +97,7 @@ export default function IndexPage() {
             </a>{' '}
             and{' '}
             <a
+              rel="me"
               className={styles.link}
               href="https://www.behance.net/elrumordelaluz"
             >
