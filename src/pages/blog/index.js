@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import * as styles from './blog.module.css'
 
-function BlogPage ({ data })  {
+function BlogPage({ data }) {
   return (
     <Layout>
       <div className={styles.list}>
@@ -30,7 +30,7 @@ export default BlogPage
 
 export const query = graphql`
   query BlogQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       totalCount
       edges {
         node {

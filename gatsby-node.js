@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       if (result.errors) {
         console.log(result.errors)
       }
@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: node.frontmatter.path,
           component: path.resolve(`./src/templates/blog.js`),
-          context: {},
+          context: { path: node.frontmatter.path },
         })
       })
       resolve()

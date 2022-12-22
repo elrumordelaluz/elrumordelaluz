@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import * as styles from '../pages/blog/blog.module.css'
 
-function BlogTemplate ({ data }) {
+function BlogTemplate({ data }) {
   const post = data.markdownRemark
   return (
     <Layout>
