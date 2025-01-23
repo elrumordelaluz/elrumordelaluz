@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --highlight: 65 100% 58%;
+    --highlight-alt: 65 100% 76%;
+    --foreground: 0 0% 100%;
+    --background: 0 0% 0%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Arapey', serif;
+}

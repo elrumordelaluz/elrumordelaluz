@@ -1,32 +1,31 @@
 {
-  "name": "elrumordelaluz.com",
-  "description": "Personal website",
-  "version": "1.0.0",
-  "author": "Lionel Tzatzkin <elrumordelaluz@hotmail.com>",
-  "dependencies": {
-    "classnames": "2.3.2",
-    "gatsby": "5.3.3",
-    "gatsby-plugin-google-analytics": "5.3.0",
-    "gatsby-plugin-react-helmet": "6.3.0",
-    "gatsby-remark-prismjs": "7.3.0",
-    "gatsby-source-filesystem": "5.3.1",
-    "gatsby-transformer-remark": "6.3.2",
-    "prismjs": "1.29.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-helmet": "6.1.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "name": "elrumordelaluz-next",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
-    "prettier": "2.8.1"
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.10",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "app": {
+    "[project]/app/page": [
+      "static/media/DdTh798HsHwubBAqfkcBTL_fZ5P_b_i39w-s.p.96c2dcae.woff2",
+      "static/media/_W__XJn_UDDA2RCKYNodREEjew-s.p.0ebdb163.woff2"
+    ],
+    "[project]/app/_not-found/page": [
+      "static/media/DdTh798HsHwubBAqfkcBTL_fZ5P_b_i39w-s.p.96c2dcae.woff2",
+      "static/media/_W__XJn_UDDA2RCKYNodREEjew-s.p.0ebdb163.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
