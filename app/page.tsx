@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"
+import { cn } from '@/lib/utils'
 
 export default function Home() {
   return (
@@ -14,29 +14,29 @@ export default function Home() {
           writing code.
         </p>
         <p className="mb-2">
-          I am currently working at{" "}
+          I am currently working at{' '}
           <a className={link} href="https://pixeden.com">
             Pixeden
           </a>
-          , pushing stuff forward into new technologies/stacks, creating{" "}
+          , pushing stuff forward into new technologies/stacks, creating{' '}
           <a className={link} href="https://orioniconlibrary.com">
             awesome
-          </a>{" "}
+          </a>{' '}
           <a className={link} href="https://www.pixeden.com/music">
             tools
           </a>
-          , closing the gap between <span className={highlight}>Designer</span>{" "}
+          , closing the gap between <span className={highlight}>Designer</span>{' '}
           and <span className={highlight}>Developer</span> .
         </p>
         <p className="mb-2">
           I mainly work with <span className={highlight}>JavaScript</span>,
           mostly with <span className={highlight}>React.js</span> but I am
-          passionate about <span className={highlight}>SVG</span> and{" "}
+          passionate about <span className={highlight}>SVG</span> and{' '}
           <span className={highlight}>CSS</span> as well.
         </p>
         <p className="mb-2">
           I love the idea behind <span className={highlight}>Open Source</span>,
-          so I create, collaborate and mantain{" "}
+          so I create, collaborate and mantain{' '}
           <a className={link} href="https://github.com/elrumordelaluz">
             several open-source modules
           </a>
@@ -47,27 +47,27 @@ export default function Home() {
 
       <div className="self-center border-t border-t-black py-10 text-2xl leading-normal [grid-area:quotes] lg:mx-48 xl:mx-auto">
         <p>
-          You can find me on{" "}
+          You can find me on{' '}
           <a
             className={link}
             rel="me"
             href="https://mastodon.uno/@elrumordelaluz"
           >
             Mastodon
-          </a>{" "}
-          or{" "}
+          </a>{' '}
+          or{' '}
           <a
             rel="me"
             className={link}
             href="https://twitter.com/elrumordelaluz"
           >
             Twitter
-          </a>{" "}
-          or find stuff I made on{" "}
+          </a>{' '}
+          or find stuff I made on{' '}
           <a rel="me" className={link} href="https://github.com/elrumordelaluz">
             Github
           </a>
-          ,{" "}
+          ,{' '}
           <a
             rel="me"
             className={link}
@@ -75,15 +75,15 @@ export default function Home() {
           >
             Codepen
           </a>
-          ,{" "}
+          ,{' '}
           <a
             rel="me"
             className={link}
             href="https://dribbble.com/elrumordelaluz/"
           >
             Dribbble
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
             rel="me"
             className={link}
@@ -91,7 +91,7 @@ export default function Home() {
           >
             Behance
           </a>
-          . Otherwise drop me an{" "}
+          . Otherwise drop me an{' '}
           <a className={link} href="mailto:elrumordelaluz@gmail.com">
             Email
           </a>
@@ -105,15 +105,15 @@ export default function Home() {
           </footer>
         </blockquote>
         <p>
-          I am a{" "}
+          I am a{' '}
           <a className={link} href="https://en.wikipedia.org/wiki/Mate_(drink)">
             mate
-          </a>{" "}
-          drinker (yup! I'm from Buenos Aires), living in a small hamlet in
-          Italy, near a lake and in front lovely horses. Play{" "}
+          </a>{' '}
+          drinker (yup! I&apos;m from Buenos Aires), living in a small hamlet in
+          Italy, near a lake and in front lovely horses. Play{' '}
           <a className={link} href="https://en.wikipedia.org/wiki/Pandeiro">
             pandeiro
-          </a>{" "}
+          </a>{' '}
           and observe the deep sky are my hobbies.
         </p>
       </div>
@@ -128,8 +128,8 @@ export default function Home() {
 }
 
 const highlight =
-  "relative after:absolute after:inset-0 after:-m-1 after:bg-highlight-alt after:-z-10 "
+  'relative after:absolute after:inset-0 after:-m-1 after:bg-highlight-alt after:-z-10 '
 const link = cn(
   highlight,
-  "after:origin-bottom after:scale-y-[20%] after:transition-transform hover:after:scale-y-100",
+  'after:origin-bottom after:scale-y-[20%] after:transition-transform hover:after:scale-y-100'
 )

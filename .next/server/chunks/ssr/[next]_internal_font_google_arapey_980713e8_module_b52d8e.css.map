@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[next]/internal/font/google/arapey_980713e8.module.css"],"sourcesContent":["/* latin */\n@font-face {\n  font-family: 'Arapey';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(@vercel/turbopack-next/internal/font/google/font?{%22url%22:%22https://fonts.gstatic.com/s/arapey/v16/-W__XJn-UDDA2RCKYNodREEjew.woff2%22,%22preload%22:true,%22has_size_adjust%22:true}) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n@font-face {\n    font-family: 'Arapey Fallback';\n    src: local(\"Times New Roman\");\n    ascent-override: 88.16%;\ndescent-override: 23.16%;\nline-gap-override: 0.00%;\nsize-adjust: 98.46%;\n\n}\n.className {\n    font-family: 'Arapey', 'Arapey Fallback';\n    font-weight: 400;\nfont-style: normal;\n\n}\n.variable {\n    --font-serif: 'Arapey', 'Arapey Fallback';\n}\n"],"names":[],"mappings":"AACA;;;;;;;;;AAQA;;;;;;;;;AASA;;;;;;AAMA","ignoreList":[0]}},
-    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
