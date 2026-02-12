@@ -131,5 +131,5 @@ const highlight =
   'relative after:absolute after:inset-0 after:-m-1 after:bg-highlight-alt after:-z-10 '
 const link = cn(
   highlight,
-  'after:origin-bottom after:scale-y-[20%] after:transition-transform hover:after:scale-y-100'
+  'after:origin-bottom after:scale-y-20 after:transition-transform hover:after:scale-y-100'
 )
