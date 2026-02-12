@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/lio/Projects/elrumordelaluz/app/layout":["static/media/535dde6eb7bea7ba-s.p.woff2","static/media/2b74fa6a69373d36-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
