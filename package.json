@@ -2,7 +2,6 @@
   "name": "elrumordelaluz-next",
   "version": "0.2.0",
   "private": true,
-  "packages": [],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
