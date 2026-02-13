@@ -44,8 +44,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --highlight-alt: 65 100% 46%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 100%;
   }
 }
 
