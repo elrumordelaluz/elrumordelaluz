@@ -1,4 +1,4 @@
-![](idea-design-code.jpg)
+<img src="idea-design-code.jpg" width="300" />
 
 > “Simplicity is about subtracting the obvious and adding the meaningful.”
 >
