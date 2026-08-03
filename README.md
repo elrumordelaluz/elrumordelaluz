@@ -22,11 +22,9 @@ There's a one-page CV at **[lionelt.dev/cv](https://www.lionelt.dev/cv)** if you
 
 A decade of libraries, most of which started as a specific need inside a bigger project and then got finished into something reusable.
 
-| Project | | |
-| --- | --- | --- |
-| **[CSShake](https://elrumordelaluz.github.io/csshake/)** | 4.9k ★ | Sass library of CSS shake animations, still shipped from cdnjs a decade later |
-| **[Reactour](https://reactour.dev)** | 4.1k ★ | React guided tours — a maintained `@reactour/*` monorepo, grown out of onboarding users into Orion |
-| **[svgson](https://github.com/elrumordelaluz/svgson)** | 473 ★ | SVG parsed into a JSON AST, and back — the SVG-as-data core extracted from Orion's engine |
+- **[CSShake](https://elrumordelaluz.github.io/csshake/)** · 4.9k&nbsp;★ — Sass library of CSS shake animations, still shipped from cdnjs a decade later
+- **[Reactour](https://reactour.dev)** · 4.1k&nbsp;★ — React guided tours, a maintained `@reactour/*` monorepo, grown out of onboarding users into Orion
+- **[svgson](https://github.com/elrumordelaluz/svgson)** · 473&nbsp;★ — SVG parsed into a JSON AST, and back; the SVG-as-data core extracted from Orion's engine
 
 Plus a belt of single-purpose SVG tools, most also shipped as a CLI and a hosted endpoint — [svg-outline-stroke](https://github.com/elrumordelaluz/outline-stroke), [svgsprit.es](https://svgsprit.es), [element-to-path](https://github.com/elrumordelaluz/element-to-path), [path-that-svg](https://github.com/elrumordelaluz/path-that-svg), [scale-that-svg](https://github.com/elrumordelaluz/scale-that-svg), [svg-path-tools](https://github.com/elrumordelaluz/svg-path-tools).
 
@@ -37,7 +35,7 @@ Plus a belt of single-purpose SVG tools, most also shipped as a CLI and a hosted
 - **[Pixeden](https://www.pixeden.com)** — design-assets subscription marketplace, ~15k visitors/day, close to a decade live and rewritten underneath itself: a monolith into Node microservices for auth, payments and downloads behind a Next.js BFF, Mongo + Redis, self-hosted. The migration carried a live Joomla/MySQL user base into Mongo lazily — old passwords kept working on first login.
 - **[Lingrem](https://www.lingrem.com)** — spaced-repetition language platform, web + iOS from one Next.js/Capacitor codebase. A model generates learning content into Zod-validated structured formats; the SM-2 scheduling stays deterministic behind a separate GraphQL API.
 - **[Orion Icon Library](https://www.orioniconlibrary.com)** — real-time SVG icon customization: recolor named layers live, export SVG, sprite, icon-font or PDF. Its parser became svgson. No AI.
-- **[Floweden](https://www.floweden.com)** — a config-driven full-stack framework. Declare the data model once as typed kinds; get the GraphQL server, the client operations and a kind-parameterized admin dashboard. Published as `@floweden/*` and powering real client sites — Lu Photos, i-NEEA, Neocorner, The Collection Paris.
+- **[Floweden](https://www.floweden.com)** — a config-driven full-stack framework. Declare the data model once as typed kinds; get the GraphQL server, the client operations and a kind-parameterized admin dashboard. Published as `@floweden/*` and powering real client sites — [Lu Photos](https://lu-photos.com/), [i-NEEA](https://www.i-neea.ch/), [Neocorner](https://www.neocorner.fr/), [The Collection Paris](https://www.thecollectionparis.com/).
 
 **My own**
 
