@@ -16,7 +16,7 @@ Rather than read about how I work, ask it. A narrator answers in my voice, groun
 
 The same knowledge base is also a **public read-only [MCP server](https://www.lionelt.dev/how-it-works)** at `lionelt.dev/api/mcp`, so you can connect an MCP client and read the curated source the site is generated from instead of scraping the rendered HTML.
 
-There's a one-page CV at **[lionelt.dev/cv](https://www.lionelt.dev/cv)** if you'd rather skim than ask.
+There's a one-page CV at **[lionelt.dev/cv](https://www.lionelt.dev/cv/print)** if you'd rather skim than ask.
 
 ## Open source
 
